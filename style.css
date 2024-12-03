@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: auto;
+    min-width: auto;
+    min-height: auto;
+    max-height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 97vh;
+    margin: 2px;
+    background-color:#A7D91E;
+    background-image: url(2Fita.png);
+    background-size: 125px 180px;    
+    background-position: top right;
+    background-repeat: no-repeat;    
+    backface-visibility: calc('10px');
+    border: 12px solid blue;
+       
+}
+
+.top{
+   width: 600px;
+   height: 200px;   
+   margin-top: 0px;
+   border-radius: 20px;
+}
+.left{
+    width: 195px;
+    height: 195px;
+    position:absolute;
+    left: 5%;
+        
+}
+
+.game-container {
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    margin-top: 20px;
+    width: 1312px;
+    height: 1322px;        
+    position: relative; 
+    background-color:#A7D91E; 
+    align-items: center;
+   
+    
+}
+.card{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    width: 149px;
+    height: 250px;    
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px ;
+    perspective: 1000px;    
+    align-items: center;
+          
+}
+.face{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+    
+}
+.back{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    background: url("img/quadra.png");
+    background-color: rgba(0, 198, 247, 0.986) ;;
+    background-repeat: no-repeat;
+    
+    
+
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+    
+}
+
+.front{
+    
+    transform: rotateY(-180deg);
+    
+}
+.front.flipped{
+    transform: rotateY(0deg);
+}
+
+.card:hover{
+    box-shadow: 0 0 1000px #fffffff9;
+    
+    
+}
+.face.flipped.match{
+    box-shadow:0 0 50px rgb(250, 0, 0) ;
+}
+
+
+
+.pagination{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 5px;
+    align-items: center;
+}
+
+select, button{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;  
+    background-color:black;  
+    color: white;
+}
+
+
+
+ #start-button #select, #button{
+    align-items: self-start;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+ }
+
+ #select{
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+
+ }
+ .puzzle-board {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, nimax(100px, 1fr));
+    
+    max-width: 600px;
+    margin: 20px 0;
+ }
+
+ #modalGameOver {
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    position:absolute;
+    margin-top: -40px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition-duration: 3s;
+    
+    
+    
+ }
+
+ #imgFimDoJogo{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    margin-top: 35px;
+
+
+ }
+
+   #imgMatchSign {
+    position:fixed ;
+    top: 250px;
+    width: 1%;
+    height: -1%;
+    margin-top: -500px;
+    margin-left: -500%;
+    transition-property: top, opacity;
+    transition-duration: 2s;
+    opacity: 1;
+    z-index: -1;
+ }  
+ .top{
+   
+    width: 45%;
+    height: 21%;
+    margin-top: 5px;
+    padding: auto;
+ }
+ 
+ 
+
+ 
+
+ 
